@@ -163,6 +163,17 @@ nav {
     }
 }
 
+.hero-images {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+@media (max-width: 600px){
+    .hero-images {
+        height: auto;
+    }    
+}
+
 /*/////our services///*/
 .our-services-con {
     text-align: center;
