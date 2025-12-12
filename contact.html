@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaanatech Company Ltd||Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-us {
+      padding: 2rem;
+      background-color: #f4f4f4;
+      max-width: 800px;
+      margin: 2rem auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 600px) {
+      .contact-us {
+        padding: 1rem;
+        margin: 1rem;
+      }
+    }
+    .contact-info {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .contact-info h1 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .contact-info p {
+      color: #555;
+      line-height: 1.6;
+    }
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-info ul li {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+    .form h2 {
+      margin-bottom: 1rem;
+      color: #333;
+      text-align: center;
+    }
+    .form form {
+      display: flex;
+      flex-direction: column;
+    }
+    .form label {
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+    .form input, .form textarea {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .form input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .form input[type="submit"]:hover {
+      background-color: #218838;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="logo">
+            <a href="index.html"><img style="width: 50px;" src="logo.png" alt="logo"></a>
+           </div>
+           <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+           </div>
+           <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="project.html">Project</a>
+        </div>
+        </nav>
+    </header>
+  </div>
+  <section class="contact-us">
+      <div class="contact-info">
+          <h1>Contact Us</h1>
+          <p>If you have any questions, feel free to reach out to us using the information below or by filling out the contact form.</p>
+          <ul>
+              <li><strong>Address:</strong> 334 Iwofe Road, Port Harcourt, Rivers State</li>
+              <li><strong>Email:</strong>
+                contact@kaanatechcompanyltd.com</li>
+              <li><strong>Phone:</strong> 08068755051, 07058414080</li>
+          </ul>
+      </div>
+      <div class="form">
+          <h2>Send Us a Message</h2>
+          <form action="mailto:contact@kaanatechcompanyltd.com>" method="post" enctype="text/plain">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="5" required></textarea><br><br>
+              <input type="submit" value="Send Message">
+          </form>
+      </div>
+      <script>
+    // Copy playlist link
+    document.getElementById('shareBtn').addEventListener('click', function() {
+      const dummyLink = window.location.href;
+      navigator.clipboard?.writeText(dummyLink).then(() => {
+        this.textContent = '✅ Link copied';
+        setTimeout(() => (this.textContent = '🔗 Copy link'), 1400);
+      }).catch(() => {
+        alert('Copy failed — here is the link: ' + dummyLink);
+      });
+    });
+  </script>
+    
+ </section>
+     <!-- FOOTTER STARTED-->
+     <footer class="footters">
+        <h1>Contact US</h1>
+        <div class="footter-details">
+            <div class="details">
+                <h1>Contact Informations</h1>
+                <p>Address: <strong> # 11 EMEKUKU STREET D/LINE, PORT HARCOURT RIVERS STATE </strong></p>
+                <p>Email: <strong>contact@kaanatechcompanyltd.com</strong></p>
+                <p>Tel: <strong> 08068755051 07058414080</strong></p>
+            </div>
+            <div class="details">
+                <h1>Short Link</h1>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="project.html">Project</a>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <p>&copy; copyright Kaanatech Company Ltd 2025</p>
+     </footer>
+     <script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    }
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* GENERAL STYLES (keeps theme consistent) */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #111;
+    box-sizing: border-box;
+}
+
+.article-hero{
+    padding: 16px 10px;
+}
+
+.articles-section{
+    padding: 13px;
+}
+
+/* ARTICLE SECTION */
+.read {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+    padding: 10px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.read h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+.read p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.read img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.read blockquote {
+    background-color: #f4f4f4;
+    border-left: 5px solid darkblue;
+    padding: 15px;
+    font-style: italic;
+    color: #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+.read blockquote p {
+    margin: 0;
+}
